@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Script1 : MonoBehaviour
+public class Script2 : MonoBehaviour
 {
     Rigidbody myRB; // THIS/MY rb
     //============
     Rigidbody enemyRB; //access rb
     //============
-    Enemyscript enemyScript; //access script / variable
+    Enemyscript1 enemyScript; //access script / variable
     
     public bool disableGravity = false;
     public bool fly = false;
@@ -26,7 +26,7 @@ public class Script1 : MonoBehaviour
     {
         myRB = GetComponent<Rigidbody>();
         //=======================
-        enemyScript = GameObject.Find("IAMTHEENEMY").GetComponent<Enemyscript>();
+        enemyScript = GameObject.Find("IAMTHEENEMY").GetComponent<Enemyscript1>();
 
         enemyRB = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Rigidbody>();
         //========================

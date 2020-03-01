@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlateScript : MonoBehaviour
+public class PlateScript2 : MonoBehaviour
 {
     //GameObject floorObject; 1
     //===

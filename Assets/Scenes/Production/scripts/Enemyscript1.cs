@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class Enemyscript : MonoBehaviour
+public class Enemyscript1 : MonoBehaviour
 {
     public bool enemyTalk = false;
 
