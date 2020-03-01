@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Enemyscript : MonoBehaviour
@@ -15,7 +16,7 @@ public class Enemyscript : MonoBehaviour
     }
 }
 
-
+/*
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +32,8 @@ namespace AlgorithimPractise
             int min = array[0];
             int max = array[0];
             int range, i, j, index;
+            max = array.Max();
+
 
             for (int x = 0; x < n; x++) // forloop to go through all the elements in the array to find the max & min
             {
@@ -77,9 +80,10 @@ namespace AlgorithimPractise
             // now copying the elements from the pidgeon holes to the original array
             for (j = 0; j < range; j++) 
             {
-                while(phole[j] --> 0)
+                while(phole[j]-- > 0)
                 {
-                    array[index++] = j + min;
+                    array[index] = j + min;
+                    index++;
                 }
             }
         }
@@ -103,7 +107,7 @@ namespace AlgorithimPractise
             
     }
 }
-
+*/
 
 /*
  // C# program to implement 
