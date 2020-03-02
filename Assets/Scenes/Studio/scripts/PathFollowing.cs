@@ -20,11 +20,13 @@ public class PathFollowing : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
     }
     void Update()
     {
         // Direction Calculation
         Vector3 direction = (paths[currentPoint].position * predictNewPos) - transform.position;
+        Vector3 dirNorm = direction.normalized * 15;
 
         //Movement Controlling
         //rb.AddForce(transform.forward * speed, ForceMode.Force);
@@ -45,7 +47,7 @@ public class PathFollowing : MonoBehaviour
         }
 
         //Drawing Rays to display information easier
-        Debug.DrawRay(transform.position, direction, Color.blue); // direction
+        Debug.DrawRay(transform.position, dirNorm, Color.blue); // direction 
         Debug.DrawRay(transform.position, transform.forward * 10, Color.green); // forward
 
         /*
@@ -62,6 +64,13 @@ public class PathFollowing : MonoBehaviour
         //transform.position += direction * speed * Time.deltaTime;
         //transform.position = Vector3.MoveTowards(transform.position, paths[currentPoint].position, Time.deltaTime * speed);
     }
+
+
+
+
+
+
+
 
     /*
     void Pursuit()
