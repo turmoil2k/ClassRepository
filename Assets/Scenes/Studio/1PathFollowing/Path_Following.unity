@@ -271,7 +271,7 @@ Transform:
   m_LocalPosition: {x: -0.25194848, y: 6.8655195, z: -5.108169}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1507321368}
+  - {fileID: 8988856569289138478}
   - {fileID: 1969208815}
   - {fileID: 1963097951}
   m_Father: {fileID: 0}
@@ -5995,11 +5995,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 340080912}
     m_Modifications:
-    - target: {fileID: 6517601275340217669, guid: 004c2a020995dde45991cae8e414dbcf,
-        type: 3}
-      propertyPath: m_Name
-      value: OptimizedTree
-      objectReference: {fileID: 0}
     - target: {fileID: 1924695104343827836, guid: 004c2a020995dde45991cae8e414dbcf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6055,6 +6050,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6517601275340217669, guid: 004c2a020995dde45991cae8e414dbcf,
+        type: 3}
+      propertyPath: m_Name
+      value: OptimizedTree
+      objectReference: {fileID: 0}
     - target: {fileID: 8490846491895646284, guid: 004c2a020995dde45991cae8e414dbcf,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6062,3 +6062,8 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 7e70e02e64ea90a4a9bc2f85bbce5b74, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004c2a020995dde45991cae8e414dbcf, type: 3}
+--- !u!4 &8988856569289138478 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 8988856569289138477}
+  m_PrefabAsset: {fileID: 0}
